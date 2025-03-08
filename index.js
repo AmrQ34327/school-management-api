@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 
-const ca = process.env.CA_CERT || fs.readFileSync(process.env.CA_CERT_PATH);
+const ca = process.env.CA_CERT ? Buffer.from(process.env.CA_CERT, 'base64') : fs.readFileSync(process.env.CA_CERT_PATH);
 
 const pool = mysql.createPool({
   host: process.env.DB_HOST,  
