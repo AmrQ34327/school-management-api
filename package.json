@@ -1,0 +1,23 @@
+{
+  "name": "node-express-api",
+  "description": "Simple api sample in Node",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Google LLC",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
